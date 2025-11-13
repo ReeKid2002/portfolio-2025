@@ -1,103 +1,157 @@
+"use client";
 import Image from "next/image";
+import { useTheme } from "./providers/theme_provider";
 
 export default function Home() {
+  const { theme } = useTheme();
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div>
+      <div className="flex items-center">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/me.png"
+          alt="Rahul"
+          width={100}
+          height={100}
+          className="rounded-full w-16 h-16 object-cover"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="ml-4">
+          <h1 className="text-xl font-semibold">
+            Hey, I'm{" "}
+            <span
+              className="font-bold cursor-pointer underline-draw transition-all duration-300"
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/rahulbehera2002/",
+                  "_blank"
+                )
+              }
+            >
+              Rahul
+            </span>
+            !
+          </h1>
+          <p className={`text-sm ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
+            Fullstack Developer{" "}
+            <span
+              className={`font-bold cursor-pointer transition-all duration-300 ${theme === 'dark' ? 'text-gray-400 hover:text-white' : 'text-black hover:text-gray-400'}`}
+              onClick={() => window.open("https://www.alaan.com", "_blank")}
+            >
+              @Alaan (YC W23)
+            </span>
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      </div>
+      <div className="mt-6" />
+      <p className={`py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
+        A{" "}
+        <span className={`font-bold ${theme === 'dark' ? 'text-gray-300' : 'text-black'}`}>
+          Full-Stack Software Engineer
+        </span>{" "}
+        based in{" "}
+        <span
+          className={`font-bold cursor-pointer transition-all duration-300 ${theme === 'dark' ? 'text-gray-300 hover:text-gray-400' : 'text-black hover:text-gray-400'}`}
+          onClick={() =>
+            window.open(
+              "https://www.google.com/maps/place/Bengaluru,+Karnataka",
+              "_blank"
+            )
+          }
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          Bengaluru
+        </span>
+        , passionate about crafting seamless digital experiences that blend
+        design, performance, and scalability.
+      </p>
+      <p className={`py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
+        I focus on creating pixel-perfect interfaces, smooth user interactions,
+        and robust backend systems that bring ideas to life. Passionate about
+        crafting seamless digital experiences, I build scalable, high-performing
+        applications and constantly explore new tools to refine performance,
+        design, and usability.
+      </p>
+      <div className="mt-6 pop-out">
+        <p className={`py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
+          Beyond the Code — A Bit About Me:
+        </p>
+        <p className={`flex items-start gap-2 py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
+          - <span>When I'm not glued to my screen, I like spending time outdoors.</span>
+        </p>
+        <p className={`flex items-start gap-2 py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
+          - <span>You'll often find me on the badminton court trying to perfect my
+          smashes.</span>
+        </p>
+        <p className={`flex items-start gap-2 py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
+          - <span>I enjoy going for a run or a jog — it's my go-to way to reset.</span>
+        </p>
+        <p className={`flex items-start gap-2 py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
+          - <span>And on most days, I'm at the gym, still trying to convince myself
+          that lifting weights is "fun."</span>
+        </p>
+        <p className={`flex items-start gap-2 py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
+          - <span>I've hopped across a few borders —{" "}
+          <span
+            className={`font-bold cursor-pointer hover:scale-110 transition-all duration-300 ${theme === 'dark' ? 'text-gray-300 hover:text-gray-400' : 'text-black hover:text-gray-400'}`}
+            onClick={() =>
+              window.open(
+                "https://www.google.com/maps/place/Sri+Lanka",
+                "_blank"
+              )
+            }
+          >
+            🇱🇰
+          </span>{" "}
+          <span
+            className={`font-bold cursor-pointer hover:scale-110 transition-all duration-300 ${theme === 'dark' ? 'text-gray-300 hover:text-gray-400' : 'text-black hover:text-gray-400'}`}
+            onClick={() =>
+              window.open(
+                "https://www.google.com/maps/place/United+Arab+Emirates",
+                "_blank"
+              )
+            }
+          >
+            🇦🇪
+          </span>{" "}
+          <span
+            className={`font-bold cursor-pointer hover:scale-110 transition-all duration-300 ${theme === 'dark' ? 'text-gray-300 hover:text-gray-400' : 'text-black hover:text-gray-400'}`}
+            onClick={() =>
+              window.open(
+                "https://www.google.com/maps/place/Saudi+Arabia",
+                "_blank"
+              )
+            }
+          >
+            🇸🇦
+          </span>{" "}
+          <span
+            className={`font-bold cursor-pointer hover:scale-110 transition-all duration-300 ${theme === 'dark' ? 'text-gray-300 hover:text-gray-400' : 'text-black hover:text-gray-400'}`}
+            onClick={() =>
+              window.open(
+                "https://www.google.com/maps/place/Thailand",
+                "_blank"
+              )
+            }
+          >
+            🇹🇭
+          </span>{" "}
+          <span
+            className={`font-bold cursor-pointer hover:scale-110 transition-all duration-300 ${theme === 'dark' ? 'text-gray-300 hover:text-gray-400' : 'text-black hover:text-gray-400'}`}
+            onClick={() =>
+              window.open("https://www.google.com/maps/place/Vietnam", "_blank")
+            }
+          >
+            🇻🇳
+          </span>{" "}
+          — but I'm just warming up. The dream? Backpack my way around the world
+          someday.</span>
+        </p>
+        <p className={`flex items-start gap-2 py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
+          - {" "}
+          <span>
+            I have a soft spot for photography — sometimes I chase sunsets,
+            sometimes I just pretend I'm shooting for National Geographic.
+          </span>
+        </p>
+      </div>
     </div>
   );
 }
