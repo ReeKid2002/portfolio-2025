@@ -16,7 +16,7 @@ export default function Home() {
         />
         <div className="ml-4">
           <h1 className="text-xl font-semibold">
-            Hey, I'm{" "}
+            Hey, I&apos;m{" "}
             <span
               className="font-bold cursor-pointer underline-draw transition-all duration-300"
               onClick={() =>
@@ -74,21 +74,21 @@ export default function Home() {
           Beyond the Code — A Bit About Me:
         </p>
         <p className={`flex items-start gap-2 py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
-          - <span>When I'm not glued to my screen, I like spending time outdoors.</span>
+          - <span>When I&apos;m not glued to my screen, I like spending time outdoors.</span>
         </p>
         <p className={`flex items-start gap-2 py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
-          - <span>You'll often find me on the badminton court trying to perfect my
+          - <span>You&apos;ll often find me on the badminton court trying to perfect my
           smashes.</span>
         </p>
         <p className={`flex items-start gap-2 py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
-          - <span>I enjoy going for a run or a jog — it's my go-to way to reset.</span>
+          - <span>I enjoy going for a run or a jog — it&apos;s my go-to way to reset.</span>
         </p>
         <p className={`flex items-start gap-2 py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
-          - <span>And on most days, I'm at the gym, still trying to convince myself
-          that lifting weights is "fun."</span>
+          - <span>And on most days, I&apos;m at the gym, still trying to convince myself
+          that lifting weights is &quot;fun.&quot;</span>
         </p>
         <p className={`flex items-start gap-2 py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
-          - <span>I've hopped across a few borders —{" "}
+          - <span>I&apos;ve hopped across a few borders —{" "}
           <span
             className={`font-bold cursor-pointer hover:scale-110 transition-all duration-300 ${theme === 'dark' ? 'text-gray-300 hover:text-gray-400' : 'text-black hover:text-gray-400'}`}
             onClick={() =>
@@ -141,14 +141,14 @@ export default function Home() {
           >
             🇻🇳
           </span>{" "}
-          — but I'm just warming up. The dream? Backpack my way around the world
+          — but I&apos;m just warming up. The dream? Backpack my way around the world
           someday.</span>
         </p>
         <p className={`flex items-start gap-2 py-2 pop-out ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>
           - {" "}
           <span>
             I have a soft spot for photography — sometimes I chase sunsets,
-            sometimes I just pretend I'm shooting for National Geographic.
+            sometimes I just pretend I&apos;m shooting for National Geographic.
           </span>
         </p>
       </div>
