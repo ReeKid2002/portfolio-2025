@@ -15,6 +15,9 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Rahul Behera - About Me",
+  icons: {
+    icon: "/rahul_behera_profile.svg"
+  }
 };
 
 export default function RootLayout({

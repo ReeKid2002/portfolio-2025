@@ -26,7 +26,7 @@ export default function ExperiencePage() {
           </h2>
           <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>Software Engineer 2</p>
           <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>July 2023 - Present</p>
-          <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-black'}mt-2`} >
+          <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-black'} mt-2`} >
             At Alaan, I’ve been part of the engineering team behind the Middle
             East’s largest corporate cards and spend management platform, built
             to simplify and modernize how businesses handle corporate expenses.
@@ -120,7 +120,7 @@ export default function ExperiencePage() {
           </h2>
           <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>Software Engineer Intern</p>
           <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>January 2023 - June 2023</p>
-          <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`} mt-2>
+          <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-black'} mt-2`}>
             Worked with McKinsey & Company on a large-scale engagement with a
             leading mining client in South-East Asia, where I helped design and
             deliver an end-to-end analytics platform to visualize and optimize
@@ -200,7 +200,7 @@ export default function ExperiencePage() {
           </h2>
           <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>Software Engineer Intern</p>
           <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`}>July 2022 - December 2022</p>
-          <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-black'}`} mt-2>
+          <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-black'} mt-2`}>
             At HighRadius, I collaborated closely with the Accounts Receivable
             (AR) team to design and develop a next-generation automation tool
             that transformed how finance teams manage daily operations. The
