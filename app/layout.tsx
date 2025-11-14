@@ -31,7 +31,7 @@ export default function RootLayout({
         <Providers>
           <div className="min-h-screen flex flex-col container mx-auto px-6 sm:px-8 md:px-10 lg:px-12 xl:px-14 2xl:px-16 pb-32">
             <Header />
-            <main className="flex-1 break-words">{children}</main>
+            <main className="flex-1 break-words pb-16">{children}</main>
           </div>
           <Footer />
         </Providers>
